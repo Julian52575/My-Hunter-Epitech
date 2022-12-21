@@ -1,0 +1,98 @@
+Flint
+Lucas
+Claus
+Boney
+Duster
+Kumatora
+Salsa
+-
+Chapter2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # args_list.reverse()
+    # for i in range( len(args_list) ):
+    #     if args_list[i] == "-t":
+    #         print("Translation along vector (", int(args_list[i - 1]), ", ", int(args_list[i - 2]), ")", sep = '')
+    #         Matrice = translation(Matrice, float(args_list[i - 1]), float(args_list[i - 2]))
+    #     if args_list[i] == "-z":
+    #         print("Scaling by factors ", int(args_list[i - 1]), " and ", int(args_list[i - 2]), "", sep = '')
+    #         Matrice = scaling(Matrice, float(args_list[i - 1]), float(args_list[i - 2]))
+    #     if args_list[i] == "-r":
+    #         print("Rotation by a ", int(args_list[i - 1]), " degree angle", sep = '')
+    #         Matrice = rotation(Matrice, float(args_list[i - 1]))
+    #     if args_list[i] == "-s":
+    #         print("Reflection over an axis with an inclination angle of ", int(args_list[i - 1]), " degrees", sep = '')
+    #         Matrice = symmetry(Matrice, float(args_list[i - 1]))
+
+# Translation along vector (2, 3)
+# Scaling by factors 1 and -2
+# Rotation by a 45 degree angle
+# Reflection over an axis with an inclination angle of 30 degrees
