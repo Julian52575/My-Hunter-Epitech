@@ -66,11 +66,10 @@ void gameboy_window(sfRenderWindow *window, sfClock *clock, sfTime time)
 static void help(int ac)
 {
     my_putstr("\tThis is my M0THER 3 inspired shooter game\n");
-    my_putstr("\tUnlike a certain someone's hunter, this one");
-    my_putstr(" has a lot more things added to it, like an HP system");
-    my_putstr(", which means you have to hit ennemies multiple times, and even multiple characters !!!\n");
+    my_putstr("It contains an HP system");
+    my_putstr(", which means you have to hit ennemies multiple times, and multiple characters, just like the original game !!!\n");
     my_putstr("Feel free to look inside my code ! I used all the basics CSFML function and a TON of liked list (don't copy and paste if you want a better grade than -42)\n");
-    my_putstr("\nbtw Epitech Nancy > Epitech others >>>>>> '42'\n");
+    my_putstr("Keep in mind this is a early project, so nothing is really optimized, but it should still be a nice showcase of what is doable in CSFML\n");
     return;
 }
 
