@@ -68,8 +68,8 @@ static void make_lucas_stats(cchara *element)
 {
     element->name = "Lucas";
     element->lvl = 1;
-    element->hp = 32;
-    element->attack = 2;
+    element->hp = 42;
+    element->attack = 3;
     element->exp = 98;
     element->max_tic = 5;
     element->tic = 0;

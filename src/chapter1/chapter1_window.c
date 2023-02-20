@@ -38,6 +38,8 @@ static void display_stuff(sfRenderWindow *window, clevel *cl)
 
 void chapter1_window(sfRenderWindow *window, clevel *cl, sfTime Btime)
 {
+    sfEvent e;
+
     set_pos_characters(cl);
     sfMusic_play(cl->music);
     sfClock *clock = sfClock_create();
@@ -47,6 +49,7 @@ void chapter1_window(sfRenderWindow *window, clevel *cl, sfTime Btime)
         display_stuff(window, cl);
         time_buffer = time_matters(cl, clock, time_buffer);
         a = doing_attacks(window, cl);
+        close_window(window, e);
     }
     sfMusic_destroy(cl->music);
     battle_end(window, cl, a);

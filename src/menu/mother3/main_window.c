@@ -27,7 +27,8 @@ int main_window_events(sfRenderWindow *window, sfEvent event)
         return (button(mouse.x, mouse.y) );
     }
     if (event.key.code == sfKeyEscape)
-            sfRenderWindow_clear(window, sfRed);
+        sfRenderWindow_clear(window, sfRed);
+
     return 1;
 }
 

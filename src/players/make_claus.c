@@ -71,8 +71,8 @@ static void make_claus_stats(cchara *element)
 {
     element->name = "Claus";
     element->lvl = 2;
-    element->hp = 42;
-    element->attack = 4;
+    element->hp = 84;
+    element->attack = 7;
     element->exp = 99;
     element->max_tic = 6;
     element->tic = 0;

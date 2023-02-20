@@ -75,11 +75,13 @@ static void help(int ac)
 
 int main(int ac, char **av)
 {
-    help(ac);
+    if (ac > 1)
+        if (av[1][0] == '-')
+            help(ac);
     sfClock *clock = sfClock_create();
     sfTime time;
     time = sfClock_restart(clock);
-    sfVideoMode video_mode = {1920, 1080, 32};
+    sfVideoMode video_mode = {1820, 1080, 32};
     sfRenderWindow *window =
     sfRenderWindow_create(video_mode, "M0ther 3", sfClose, NULL);
     sfRenderWindow_setFramerateLimit(window, 60);

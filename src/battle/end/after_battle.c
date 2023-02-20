@@ -75,10 +75,13 @@ sfClock *clock, sfTime time)
 
 void exp_win(sfRenderWindow *window, clevel *cl, sfClock *clock, sfTime time)
 {
+    sfEvent e;
+
     sfMusic *m = sfMusic_createFromFile("assets/battle/end/bgm/levelup.ogg");
     sfMusic_play(m);
     float time_buffer = 0.00;
     while (time_buffer < 10.0) {
+        close_window(window, e);
         time = sfClock_getElapsedTime(clock);
         time_buffer += time.microseconds / 1000000.0;
         display_win(window, cl, time, clock);

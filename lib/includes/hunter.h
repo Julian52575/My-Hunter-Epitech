@@ -22,6 +22,8 @@
 #include <SFML/System/Time.h>
 #include <SFML/System/Vector3.h>
 
+void close_window(sfRenderWindow *w, sfEvent e);
+
 sfIntRect create_entity_gameboy(sfSprite *gameboy);
 void create_entity_nintendo(sfSprite *nintendo);
 sfIntRect create_entity_mom(sfSprite *mom3);

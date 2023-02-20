@@ -50,6 +50,8 @@ static void display_win(sfRenderWindow *window, clevel *cl, sfSprite *you_win)
 
 void battle_win(sfRenderWindow *window, clevel *cl, sfTime time)
 {
+    sfEvent e;
+
     sfClock *clock = sfClock_create();
     sfClock_restart(clock);
     float time_buffer = 0.00;
@@ -57,6 +59,7 @@ void battle_win(sfRenderWindow *window, clevel *cl, sfTime time)
     sfMusic_play(m);
     sfSprite *you_win = congratualion_youre_the_best_wow_sprite();
     while (time_buffer < 6.0) {
+        close_window(window, e);
         time = sfClock_getElapsedTime(clock);
         display_win(window, cl, you_win);
         if (time.microseconds / 1000000.0 > 0.20) {

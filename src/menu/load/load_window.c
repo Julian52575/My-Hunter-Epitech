@@ -25,6 +25,7 @@ sfSprite *mom3, sfSprite *back);
 static int load_window_events(sfRenderWindow *window,
 sfEvent event, int prologue)
 {
+    close_window(window, event);
     if (sfRenderWindow_pollEvent(window, &event) == sfFalse)
         return 1;
     if (sfMouse_isButtonPressed(sfMouseLeft) == sfTrue) {

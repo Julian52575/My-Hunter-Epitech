@@ -52,7 +52,7 @@ static void stat_molecricket(cenemies *element)
 {
     element->x_hitbox = 35 * 4;
     element->y_hitbox = 25 * 4;
-    element->hp = 5;
+    element->hp = 4;
     element->attack = 4;
     element->max_tic = 30;
     element->tic = 20;
